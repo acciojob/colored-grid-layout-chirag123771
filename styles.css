@@ -1,1 +1,62 @@
 /*  your css code here. If applicable */
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 4vw;
+    }
+
+    .grid-item:nth-child(1) {
+      grid-column: span 4;
+      background-color: green;
+    }
+
+    .grid-item:nth-child(2) {
+      grid-row: span 4;
+      background-color: green;
+    }
+.grid-item:nth-child(3) {
+      grid-row: span ;
+      background-color: green;
+    }
+
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5) {
+      grid-column: span 2;
+      background-color: green;
+    }
+ .grid-item:nth-child(6) {
+      grid-column: span ;
+      background-color: green;
+    }
+ .grid-item:nth-child(7) {
+      grid-column: span ;
+      background-color: green;
+    }
+ .grid-item:nth-child(8) {
+      grid-column: span ;
+      background-color: green;
+    }
+ .grid-item:nth-child(9) {
+      grid-column: span ;
+      background-color: green;
+    }
+
+    .grid-item:nth-child(10) {
+      grid-column: span 3;
+      background-color: green;
+    }
